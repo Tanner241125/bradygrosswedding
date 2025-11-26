@@ -15,13 +15,11 @@ body,html {
 
 .heroimg {
     height: 80%;
-    border-top: 2px solid #b9d7ea;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("hero.jpg");
-        
+    position: sticky;
 }
 .herotext {
     text-align: center;
@@ -32,12 +30,19 @@ body,html {
     color: white;
     font-size: 55px;
 }
-.nav {
+.head {
     height: 6%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    z-index:1; 
+}
+.nav {
+    height: 100%;
     background-color: #769fcd;
     display: flex;
     align-items: center;
-    position: sticky;
+    border-bottom: 1px solid #d6e6f2;
 }
 .navlogo {
     height:80%;
