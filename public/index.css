@@ -37,6 +37,7 @@ body,html {
     background-color: #769fcd;
     display: flex;
     align-items: center;
+    position: sticky;
 }
 .navlogo {
     height:80%;
