@@ -20,7 +20,11 @@ body,html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("hero.jpg");
+=======
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+>>>>>>> a6990f0 (first rough design of homepage - still much to do)
         
 }
 .herotext {
@@ -71,7 +75,11 @@ body,html {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+<<<<<<< HEAD
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("hero.jpg");
+=======
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+>>>>>>> a6990f0 (first rough design of homepage - still much to do)
 
     }
     .herotext {
