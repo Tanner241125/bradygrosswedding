@@ -4,6 +4,9 @@ body,html {
     font-family: Kugile;
     background-color: #d6e6f2;
 }
+
+/* FONTS */
+
 @font-face {
     font-family: Kugile;
     src: url(Kugile_Demo.ttf);
@@ -12,6 +15,8 @@ body,html {
     font-family: Perfecto;
     src: url(PerfectoCalligraphy.ttf);
 }
+
+/* --- START OF HEADER AND HEROIMG --- */
 
 .heroimg {
     height: 80%;
@@ -70,6 +75,39 @@ body,html {
 .navlinks button {
     display: none;
 }
+
+/* ------- START OF MAIN ------- */
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .date {
+    margin: 1em;
+    font-size: 2em;
+}
+.main p {
+    margin: 2em;
+}
+.main hr {
+    width: 10em;
+    background-color: black;
+    border: none;
+    height: 0.1em;
+    margin-bottom: 2em;
+}
+.main .wrapper {
+    width: fit-content;
+    margin: 1em;
+    border: 5px double black;
+    text-align: center;
+}
+
+/* --- FORMATTING FOR PHONE / SMALL SCREEN --- */
+
 @media screen and (max-width: 768px) {
     .heroimg {
         height: 40%;
