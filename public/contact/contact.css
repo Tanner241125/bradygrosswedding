@@ -1,0 +1,65 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    font-family: OrangeAve;
+    background-color: #d6e6f2;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: OrangeAve;
+    src: url(../index/OrangeAvenueDEMO-Regular.otf);
+}
+
+/* --- START OF HEADER --- */
+
+.head {
+    height: 6%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    z-index:1; 
+}
+.nav {
+    height: 100%;
+    background-color: #769fcd;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d6e6f2;
+}
+.navlogo {
+    height:80%;
+    padding-left: 10px;
+}
+.navlinks {
+    display: flex;
+    width: 100%;
+    margin-top: 0.2em;
+}
+.navlinks h1 {
+    margin-left: 4em;
+    display: flex;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+.navlinks button {
+    display: none;
+}
+
+/* --- FORMATTING FOR PHONE / SMALL SCREEN --- */
+
+@media screen and (max-width: 768px) {
+    .navlinks h1 {
+        display:none;
+    }
+    .navlinks {
+        display: flex;
+        justify-content: right;
+    }
+    .navlinks button {
+        display: block;
+        margin-top: 0.2em;
+    }
+}

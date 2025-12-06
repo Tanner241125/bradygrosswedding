@@ -1,15 +1,15 @@
 body,html {
     height: 100%;
     margin: 0;
-    font-family: Kugile;
+    font-family: OrangeAve;
     background-color: #d6e6f2;
 }
 
 /* FONTS */
 
 @font-face {
-    font-family: Kugile;
-    src: url(Kugile_Demo.ttf);
+    font-family: OrangeAve;
+    src: url(OrangeAvenueDEMO-Regular.otf);
 }
 @font-face {
     font-family: Perfecto;
@@ -52,7 +52,6 @@ body,html {
 .navlogo {
     height:80%;
     padding-left: 10px;
-    
 }
 .herotext h1 {
     margin: 0;
@@ -63,7 +62,7 @@ body,html {
 .navlinks {
     display: flex;
     width: 100%;
-    padding-top: 0.5em;
+    margin-top: 0.2em;
 }
 .navlinks h1 {
     margin-left: 4em;
@@ -134,5 +133,6 @@ body,html {
     }
     .navlinks button {
         display: block;
+        margin-top: 0.2em;
     }
 }
