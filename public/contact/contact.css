@@ -33,33 +33,48 @@ body,html {
     padding-left: 10px;
 }
 .navlinks {
+    height: 100%;
     display: flex;
     width: 100%;
-    margin-top: 0.2em;
+    align-items: center;
 }
-.navlinks h1 {
+.navlinks button {
+    height: 100%;
     margin-left: 4em;
     display: flex;
+    line-height: 2em;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
     color: white;
     font-weight: normal;
     font-size: 20px;
+    font-family: OrangeAve;
+    cursor: pointer;
 }
-.navlinks button {
+.navlinks #link:hover {
+    color: #d6e6f2;
+    border-bottom: 2px solid #d6e6f2;
+}
+.navlinks #link.active {
+    border-bottom: 2px solid white;
+}
+.navlinks #hamburger {
     display: none;
 }
 
 /* --- FORMATTING FOR PHONE / SMALL SCREEN --- */
 
 @media screen and (max-width: 768px) {
-    .navlinks h1 {
-        display:none;
+    .navlinks #link {
+        display: none;
     }
     .navlinks {
         display: flex;
         justify-content: right;
     }
-    .navlinks button {
-        display: block;
-        margin-top: 0.2em;
+    .navlinks #hamburger {
+        display: flex;
+        align-items: center;
     }
 }
