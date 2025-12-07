@@ -7,16 +7,9 @@
 	"name": "my-first-worker",
 	"compatibility_date": "2025-11-25",
 	"main": "src/index.js",
-	"assets": [
-		{
-			"directory": "./public/index",
-			"binding": "INDEX"
-  		},
-		{
-			"directory": "./public/about",
-			"binding": "ABOUT"
-		}
-	],
+	"assets": {
+		"directory": "public"
+  	},
 	"observability": {
 		"enabled": true
 	}
