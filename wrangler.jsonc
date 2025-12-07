@@ -6,11 +6,11 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "my-first-worker",
 	"compatibility_date": "2025-11-25",
+	"main": "src/index.js",
 	"assets": {
-		// The path to the directory containing the `index.html` file to be served at `/`
-		"directory": "./public/index"
-
-	},
+		"directory": "./public",
+		"binding": "ASSETS"
+  	},
 	"observability": {
 		"enabled": true
 	}
