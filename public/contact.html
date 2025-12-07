@@ -22,11 +22,24 @@
                 </button>
             </div>
         </div>
+        <div id="navmobile" class="navmobile">
+            <div class="home">
+                <button id="mobilelink" onclick="location.href='index.html'">Home</button>
+            </div>
+            <div class="about">
+                <button id="mobilelink" onclick="location.href='about.html'">About</button>
+            </div>
+            <div class="contact">
+                <button id="mobilelink" onclick="location.href='contact.html'" class="active">Contact</button>
+            </div>
+        </div>
     </div>
     <script>
         const burger = document.getElementById("hamburger");
+        const navmobile = document.getElementById("navmobile");
         burger.onclick = function() {
-            burger.classList.toggle("is-active")
+            burger.classList.toggle("is-active");
+            navmobile.classList.toggle("active");
         };
     </script>
 </body>

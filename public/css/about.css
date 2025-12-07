@@ -62,6 +62,13 @@ body,html {
 .navlinks #hamburger {
     display: none;
 }
+.navmobile {
+    display: none;
+}
+
+/* ----- START OF MAIN ----- */
+
+
 
 /* --- FORMATTING FOR PHONE / SMALL SCREEN --- */
 
@@ -76,5 +83,27 @@ body,html {
     .navlinks #hamburger {
         display: flex;
         align-items: center;
+    }
+    .navmobile.active {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #mobilelink {
+        display: flex;
+        padding: 0.7em;
+        float: right;
+        height: 3em;
+        width: 40%;
+        align-items: center;
+        font-family: OrangeAve;
+        font-weight:bolder;
+        color: black;
+        background-color: #d6e6f2;
+        font-size: 1.5em;
+        border-radius: 5px;
+        border: 5px solid #769fcd;
+        border-style: double;
     }
 }

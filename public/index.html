@@ -12,7 +12,7 @@
         <div class="nav">
             <img class="navlogo" src="images/weddinglogo.png" alt="">
             <div class="navlinks">
-                <button id="link" onclick="location.href='index.html'" class="active">Home</buttpn>
+                <button id="link" onclick="location.href='index.html'" class="active">Home</button>
                 <button id="link" onclick="location.href='about.html'">About</button>
                 <button id="link" onclick="location.href='contact.html'">Contact</button>
                 <button id="hamburger" class="hamburger hamburger--collapse" type="button">
@@ -22,15 +22,15 @@
                 </button>
             </div>
         </div>
-        <div class="navmobile">
+        <div id="navmobile" class="navmobile">
             <div class="home">
-
+                <button id="mobilelink" onclick="location.href='index.html'" class="active">Home</button>
             </div>
             <div class="about">
-
+                <button id="mobilelink" onclick="location.href='about.html'">About</button>
             </div>
             <div class="contact">
-
+                <button id="mobilelink" onclick="location.href='contact.html'">Contact</button>
             </div>
         </div>
     </div>
@@ -51,8 +51,10 @@
     
     <script>
         const burger = document.getElementById("hamburger");
+        const navmobile = document.getElementById("navmobile");
         burger.onclick = function() {
-            burger.classList.toggle("is-active")
+            burger.classList.toggle("is-active");
+            navmobile.classList.toggle("active");
         };
     </script>
 </body>

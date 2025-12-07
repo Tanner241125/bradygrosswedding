@@ -62,6 +62,13 @@ body,html {
 .navlinks #hamburger {
     display: none;
 }
+.navmobile {
+    display: none;
+}
+
+/* ----- START OF MAIN ----- */
+
+
 
 /* --- FORMATTING FOR PHONE / SMALL SCREEN --- */
 
@@ -76,5 +83,42 @@ body,html {
     .navlinks #hamburger {
         display: flex;
         align-items: center;
+    }
+    .navmobile.active {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+        background-color: white;
+    }
+    #mobilelink {
+        display: flex;
+        padding: 0.7em;
+        float: right;
+        height: 3em;
+        width: 100%;
+        align-items: center;
+        font-family: OrangeAve;
+        font-weight:bolder;
+        color: black;
+        background-color: white;
+        font-size: 1.4em;
+        border: none;
+        border: 1px solid rgb(176, 176, 176);
+        border-radius: 5px;
+    }
+    #mobilelink:hover {
+        background-color:#769fcd;
+        color: white;
+        cursor: pointer;
+    }
+    #mobilelink.active {
+        background-color: #dedede;
+        border: 1px solid black;
+    }
+    #mobilelink.active:hover {
+        background-color: #769fcd;
+        color: white;
     }
 }
