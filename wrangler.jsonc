@@ -15,10 +15,10 @@
 		"enabled": true
 	},
 	"routes": [
-		{
-		"pattern": "your-site-domain.com*", // Replace with your actual domain
-		"zone_name": "your-site-domain.com"
-		}
+    {
+      "pattern": "bradygrosswedding.com*", // Replace with your actual domain
+      "zone_name": "bradygrosswedding.com"
+    }
   	]
 	/**
 	 * Smart Placement
