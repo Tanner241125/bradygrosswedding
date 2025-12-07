@@ -9,7 +9,7 @@ body,html {
 
 @font-face {
     font-family: OrangeAve;
-    src: url(../index/OrangeAvenueDEMO-Regular.otf);
+    src: url(../fonts/OrangeAvenueDEMO-Regular.otf);
 }
 
 /* --- START OF HEADER --- */
@@ -67,7 +67,7 @@ body,html {
 
 @media screen and (max-width: 768px) {
     .navlinks #link {
-        display:none;
+        display: none;
     }
     .navlinks {
         display: flex;

@@ -9,11 +9,11 @@ body,html {
 
 @font-face {
     font-family: OrangeAve;
-    src: url(OrangeAvenueDEMO-Regular.otf);
+    src: url(../fonts/OrangeAvenueDEMO-Regular.otf);
 }
 @font-face {
     font-family: Perfecto;
-    src: url(PerfectoCalligraphy.ttf);
+    src: url(../fonts/PerfectoCalligraphy.ttf);
 }
 
 /* --- START OF HEADER AND HEROIMG --- */
@@ -23,7 +23,7 @@ body,html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/hero.jpg");
     position: sticky;
 }
 .herotext {
@@ -131,7 +131,7 @@ body,html {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
 
     }
     .herotext {
