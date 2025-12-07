@@ -8,12 +8,18 @@
 	"compatibility_date": "2025-11-25",
 	"assets": {
 		// The path to the directory containing the `index.html` file to be served at `/`
-		"directory": "./public"
+		"directory": "./public/index"
 
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"routes": [
+		{
+		"pattern": "your-site-domain.com*", // Replace with your actual domain
+		"zone_name": "your-site-domain.com"
+		}
+  	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
