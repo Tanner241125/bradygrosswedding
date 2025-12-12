@@ -11,6 +11,10 @@ body,html {
     font-family: OrangeAve;
     src: url(../fonts/OrangeAvenueDEMO-Regular.otf);
 }
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
 
 /* --- START OF HEADER --- */
 
@@ -42,22 +46,24 @@ body,html {
     height: 100%;
     margin-left: 4em;
     display: flex;
-    line-height: 2em;
+    align-items: center;
     background: none;
     border: 0;
-    border-bottom: 2px solid transparent;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid transparent;
     color: white;
+    font-size: 3vh;
     font-weight: normal;
-    font-size: 20px;
-    font-family: OrangeAve;
+    font-family: Raleway;
     cursor: pointer;
+    text-shadow: 1px 1px 4px black;
 }
 .navlinks #link:hover {
     color: #d6e6f2;
-    border-bottom: 2px solid #d6e6f2;
+    border-bottom: 0.1em solid #d6e6f2;
 }
 .navlinks #link.active {
-    border-bottom: 2px solid white;
+    border-bottom: 0.1em solid white;
 }
 .navlinks #hamburger {
     display: none;
@@ -99,7 +105,8 @@ body,html {
         height: 3em;
         width: 100%;
         align-items: center;
-        font-family: OrangeAve;
+        font-family: Raleway;
+        font-weight: lighter;
         font-weight:bolder;
         color: black;
         background-color: white;
@@ -112,6 +119,7 @@ body,html {
         background-color:#769fcd;
         color: white;
         cursor: pointer;
+        border: 1px solid black;
     }
     #mobilelink.active {
         background-color: #dedede;
@@ -120,5 +128,6 @@ body,html {
     #mobilelink.active:hover {
         background-color: #769fcd;
         color: white;
+        border: 1px solid black;
     }
 }
