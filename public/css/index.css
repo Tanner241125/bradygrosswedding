@@ -15,6 +15,10 @@ body,html {
     font-family: Perfecto;
     src: url(../fonts/PerfectoCalligraphy.ttf);
 }
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
 
 /* --- START OF HEADER AND HEROIMG --- */
 
@@ -162,21 +166,43 @@ body,html {
         display: flex;
         flex-direction: column;
         margin: 0;
+        height: fit-content;
+        background-color: white;
     }
     #mobilelink {
         display: flex;
+        justify-content: space-between;
         padding: 0.7em;
-        float: right;
         height: 3em;
-        width: 40%;
+        width: 100%;
         align-items: center;
         font-family: OrangeAve;
+        font-weight: lighter;
         font-weight:bolder;
         color: black;
-        background-color: #d6e6f2;
-        font-size: 1.5em;
+        background-color: white;
+        font-size: 1.4em;
+        border: none;
+        border: 1px solid rgb(176, 176, 176);
         border-radius: 5px;
-        border: 5px solid #769fcd;
-        border-style: double;
+    }
+    #mobilelink:hover {
+        background-color:#769fcd;
+        color: white;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+    #mobilelink.active {
+        background-color: #dedede;
+        border: 1px solid black;
+    }
+    #mobilelink.active:hover {
+        background-color: #769fcd;
+        color: white;
+        border: 1px solid black;
+    }
+    #mobilelink span {
+        font-size: 1.2em;
+        padding-right: 0.3em;
     }
 }

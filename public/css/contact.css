@@ -49,12 +49,12 @@ body,html {
     align-items: center;
     background: none;
     border: 0;
-    padding-bottom: 0.2em;
+    padding-top: 0.2em;
     border-bottom: 0.1em solid transparent;
     color: white;
     font-size: 3vh;
     font-weight: normal;
-    font-family: Raleway;
+    font-family: OrangeAve;
     cursor: pointer;
     text-shadow: 1px 1px 4px black;
 }
@@ -100,12 +100,13 @@ body,html {
     }
     #mobilelink {
         display: flex;
+        justify-content: space-between;
         padding: 0.7em;
         float: right;
         height: 3em;
         width: 100%;
         align-items: center;
-        font-family: Raleway;
+        font-family: OrangeAve;
         font-weight: lighter;
         font-weight:bolder;
         color: black;
@@ -129,5 +130,9 @@ body,html {
         background-color: #769fcd;
         color: white;
         border: 1px solid black;
+    }
+    #mobilelink span {
+        font-size: 1.2em;
+        padding-right: 0.3em;
     }
 }
